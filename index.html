@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet&display=swap"
+      rel="stylesheet"
+    />
     <title>Blackjack</title>
-    <link rel="stylesheet" type="text/css" href="Pixellari.ttf" />
+
     <style>
       * {
         box-sizing: border-box;
       }
 
       body {
-        font-family: puffin-arcade-chrome, sans-serif;
-        font-style: normal;
-        font-weight: 800;
+        font-family: "Handjet", cursive;
         margin-left: 30px;
         margin-right: 30px;
-        background-color: rgb(23, 23, 23);
-        /* background-image: url(pixelcardsuit.jpg); */
-        background-size: 27%;
-        background-position: -7px 6px;
+        /* background-color: rgb(245, 245, 245); */
+        background-image: url(queen.jpg);
+        background-size: 60%;
+        background-position: -80px 340px;
+        background-repeat: no-repeat;
         background-blend-mode: soft-light;
       }
 
       #header {
         text-align: center;
         font-size: 70px;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
       }
 
       #container {
         background-color: rgba(255, 255, 255, 1);
         border: 2px solid #000000;
         margin: 40px auto;
-        max-width: 800px;
+        max-width: 500px;
         padding: 38px 31px;
       }
 
       input {
-        font-size: 21px;
+        font-size: 24px;
         line-height: 33px;
         margin: 0 0 23px 0;
         padding: 0 9px;
@@ -45,9 +50,8 @@
       }
 
       button {
-        font-size: 16px;
-        font-family: puffin-arcade-chrome, sans-serif;
-        font-style: normal;
+        font-size: 24px;
+        font-family: "Handjet", cursive;
         line-height: 33px;
         margin: 0 0 23px 0;
         padding: 0 6px;
@@ -64,6 +68,7 @@
         padding: 20px;
         width: 100%;
         border: 2px solid #797979;
+        font-size: 24px;
       }
 
       #top {
@@ -71,12 +76,12 @@
         margin: 20px auto;
         padding: 10px;
         width: 100%;
+        font-size: 24px;
       }
 
       #input-field::placeholder {
-        font-family: puffin-arcade-chrome, sans-serif;
-        font-style: normal;
-        font-size: 16px;
+        font-family: "Handjet", cursive;
+        font-size: 24px;
       }
 
       #input-text {
@@ -86,7 +91,7 @@
   </head>
 
   <body>
-    <h1 id="header">BLACKJACK</h1>
+    <h2 id="header">BLACKJACK</h2>
     <div id="container">
       <div id="top">Input:</div>
       <input id="input-field" placeholder="Click submit to begin" />
