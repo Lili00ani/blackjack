@@ -124,6 +124,8 @@ let main = function (input) {
       compCard[0].suit
     )})<br><br> `;
     // text += `Computer had ${myCardText(compCard)}`;
+    console.log(playerCard);
+    console.log(compCard);
     if (checkBlackJack(compCard)) {
       text += `😭You lose.<br> Computer had ${myCardText(compCard)} <br>`;
       inputField.placeholder = "Click to restart";
@@ -135,11 +137,10 @@ let main = function (input) {
     } else {
       inputField.placeholder = "Type 'hit' or 'stand";
       gameMode = "decide";
-      return text;
     }
-  }
-
-  if (gameMode == "decide") {
+    return text;
+  } else if (gameMode == "decide") {
+    input = input.toLowerCase();
     if (input == "hit") {
       playerCard.push(shuffledDeck.pop());
       let text = "";
@@ -186,5 +187,8 @@ let main = function (input) {
     } else {
       return `Invalid input. Type hit or stand.`;
     }
+  } else {
+    gameMode = "start";
+    return "";
   }
 };
